@@ -9,18 +9,19 @@
   background-color:#500361; 
   font-weight: bold;
   color: white;
-  width: 350px;
+  width: 100%;
   font-size: 20px;
   text-align: center; 
 } ::placeholder {
   color: white;
 }
 .LoginImage{
-  margin-top: -20px;
-  width:150px;
-  height: 150px;
+  margin-top: 20%;
+  /* margin-top: -20px; */
+  /* width:150px; */
+  /* height: 150px; */
   border-radius: 50%;
-  margin-left:340px;
+  /* margin-left:340px; */
 }
 .rewards{
     align-items:center;
@@ -100,8 +101,8 @@
   color: white;
   font-size:15px;
   font-weight: bold;
-  margin-left: 100px;
-  margin-top: -20px;
+  /* margin-left: 100px; */
+  margin-top: 20%;
 }
 .birthfont{
   font-size: 40px;
@@ -279,7 +280,7 @@
   margin-left: 30px;
 }
 .form {
-  width: "100%";
+  /* width: "100%"; */
   margin-top: 1px;
 }
 .buttonSubmit {
@@ -291,7 +292,6 @@
   height: 35px;
   color:#7c1294;
   font-weight: bold;
-  margin-left: 120px; 
   font-size: 20px;
   background-color: #ffdc09;
 }
@@ -334,6 +334,12 @@
   width: 200px;
   height: 50px;
   background-blend-mode: multiply;
+}
+.text-rewards{ 
+  font-style: bold;
+  font-weight: bold;
+  font-size: 25px;
+  color: #500361;
 }
 
 /*

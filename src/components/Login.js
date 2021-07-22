@@ -35,7 +35,63 @@ const Login = () => {
     
   <div className="container-fluid">
     <div className="row paper1">
-       <div className="row">
+        <div className="col-md-12">
+            <div className="row">
+              <div className="col-md-12">
+                <img src={logo} className="imageLogo float-right img fluid" />
+              </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <img src={rewardslogo} className="LoginImage img fluid" />
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="row loginFont">
+                                <p>Login or Register <b className="text">Below</b></p> 
+                              </div> 
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="row">
+                                {/* <div className="col-md-6"> */}
+                                  <form className="form">  
+                                    <input className="form-control textboxField" type="text" label="Cell Number" name="cellnumber" placeholder="Cell Number" />
+                                    <p></p>    
+                                    <button type="submit" onClick={navigateTo} className="buttonSubmit mb-2 mx-auto">Send OTP </button>
+                                  </form>
+                                {/* </div> */}
+                              </div> 
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       {/* <div className="row">
          <div className="col-md-12">
             <div className="row">
               <div className="col-md-12">
@@ -43,13 +99,13 @@ const Login = () => {
              </div>
             </div>
          </div>
-       </div>
+       </div> */}
        
-        <div className="col-md-6"> 
+        {/* <div className="col-md-6"> 
             <div className="col-md-12">
                <div className="row LoginImage">
                  <img src={rewardslogo} className="LoginImage img fluid" />
-              </div>
+               </div>
             </div>
         </div>
         <div className="col-md-12">
@@ -71,11 +127,40 @@ const Login = () => {
                   <p className="text-center">Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
               </div>
             </div>
-        </div>
+        </div> */}
     </div>
     <div className="row rewards">
       <div className="col-md-12">
-
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="text-rewards">
+                                GET REWARDS WITH INSTANT 
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="text-rewards">
+                                SAVINGS EVERY TIME TOU PURCHASE
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
       </div>
     </div>
     <div className="row visit1">
