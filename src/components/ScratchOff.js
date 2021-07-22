@@ -121,6 +121,7 @@ class ScratchOff extends React.PureComponent {
         //this.setState({ random: this.state.random + rand });
         //const secret = Math.random().toString(16).slice(2, 7).toUpperCase();
          
+        ///responsive page, loading page 
         return (
            
           <div style={{position:'relative',width:1535,opacity:1.0,height:750}}>     
@@ -143,12 +144,12 @@ class ScratchOff extends React.PureComponent {
               <img src={winlogo} className="win"/>
             </div>
             <div className="scratchandwinlogo">
-                 <img src={rewardslogo} className="scratchandwinlogo" />
+                <img src={rewardslogo} className="scratchandwinlogo" />
             </div>
            </div>
-         </div>   
+          </div>
         );
-      }
+    }
 }
 
 //const secret = Math.random().toString(16).slice(2, 7).toUpperCase();

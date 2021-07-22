@@ -8,6 +8,8 @@ import ScratchOff from "./components/ScratchOff";
 import { createBrowserHistory } from "history";
 import Routes from './routes';
 
+
+
 const hist = createBrowserHistory();
 
 //const BirthDayPage = React.lazy(() => import('./components/BirthDayPage'));
@@ -15,8 +17,8 @@ const hist = createBrowserHistory();
 
 function App() {
   return (
-    <div className="page-container">
-      <div className="content-wrap" history={hist}>
+    <div>
+      <div history={hist}>
       <HashRouter >
         <Route exact path="/" component={Login} />
         <Route exact path="/BirthDayPage" component={BirthDayPage}/>

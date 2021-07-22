@@ -1,5 +1,4 @@
 import React, { useState ,useRef} from "react";
-import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
 import Card from "@material-ui/core/Card";
@@ -16,15 +15,130 @@ import icons from '../image/icons.PNG';
 import image from '../image/imageedit_1_4765382172.png';
 import image1 from '../image/imageedit_3_7930458612.png';
 
+
 const Login = () => {
 
   const history = useHistory();
   const navigateTo = () => history.push('/BirthDayPage');
 
-    return (
-     
-        <div className="main-bg">
-         
+
+  const mystyle = {
+    //margin-top: -20px,
+    width:"150px",
+    height: "150px",
+    border: "50%",
+  
+    
+  }; 
+
+  return (
+    
+  <div className="container-fluid">
+    <div className="row paper1">
+       <div className="row">
+         <div className="col-md-12">
+            <div className="row">
+              <div className="col-md-12">
+               <img src={logo} className="imageLogo float-right img fluid" />
+             </div>
+            </div>
+         </div>
+       </div>
+       
+        <div className="col-md-6"> 
+            <div className="col-md-12">
+               <div className="row LoginImage">
+                 <img src={rewardslogo} className="LoginImage img fluid" />
+              </div>
+            </div>
+        </div>
+        <div className="col-md-12">
+           <div className="row inside-paper1">
+              <div className="col-md-12">
+                <div className="row loginFont">
+                  <p>Login or Register <b className="text">Below</b></p> 
+                 </div>
+                 <form className="form">  
+                  <input className="textboxField" type="text" label="Cell Number" name="cellnumber" placeholder="Cell Number" />
+                   <p></p>    
+                  <button type="submit" onClick={navigateTo} className="buttonSubmit">Send OTP </button>
+                </form>
+              </div>
+           </div>
+           <div className="col-md-15">
+                <div className="terms-login"> 
+                <br/>
+                  <p className="text-center">Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div className="row rewards">
+      <div className="col-md-12">
+
+      </div>
+    </div>
+    <div className="row visit1">
+
+    </div>
+  </div>
+   
+    
+   /*
+       <div className="container">
+         <div className="row paper1">
+           <div className="col-md-12">
+             <div className="row">
+              <div className="col-12">
+               <img src={logo} className="float-right" />
+             </div>
+            </div>
+           </div>
+           <div className="row justify-content-center">
+             <div className="col-md-12">
+              <div class="row image-paper1">
+                 <div className="col-12">
+                  <div className="row LoginImage">
+                    <img src={rewardslogo} className="LoginImage" />
+                  </div>
+                 </div>
+              </div>
+             </div>
+            </div> 
+             <div className="col-md-12">
+              <div className="row">
+                <div className="col-12">
+                 <div className="loginFont">
+                  <p>Login or Register <b className="text">Below</b></p> 
+                 </div>
+                </div>
+              </div>
+             </div>
+             <div className="col-md-12">
+               <div className="row">
+                 <div className="col-12">
+                 <form className="form">  
+               <input className="textboxField" type="text" label="Cell Number" name="cellnumber" placeholder="Cell Number" />
+              <p></p>
+              <div>
+              <button
+                type="submit"
+                onClick={navigateTo}
+                className="btn buttonSubmit"
+              >
+                Send OTP
+              </button>
+               </div>
+              </form>
+                 </div>
+               </div>
+             </div>
+           
+         </div>
+         <div className="row"></div>
+         <div className="row"></div>
+
+         { <div className="name">
            <div className="paper1">
              <div className="logo">
               <img src={logo} className="imageLogo"/>
@@ -46,15 +160,16 @@ const Login = () => {
               <button
                 type="submit"
                 onClick={navigateTo}
-                className="buttonSubmit"
+                className="btn btn-primary"
               >
                 Send OTP
               </button>
-                <div className=""> 
-                  
-                </div>
+                
                </div>
               </form>
+              <div className="terms-login"> 
+                  <p>Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
+              </div>
              </div>
           </div>
           <div className="rewards">
@@ -84,7 +199,10 @@ const Login = () => {
                
              </div>
           </div>
-        </div>
+        </div> }
+       </div>*/
+
+        
     )
 }
 

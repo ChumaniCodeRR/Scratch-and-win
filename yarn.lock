@@ -1937,11 +1937,6 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
-"bootstrap@^5.0.2":
-  "integrity" "sha512-1Ge963tyEQWJJ+8qtXFU6wgmAVj9gweEjibUdbmcCEYsn38tVwRk8107rk2vzt6cfQcRr3SlZ8aQBqaD8aqf+Q=="
-  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.0.2.tgz"
-  "version" "5.0.2"
-
 "boxen@^1.2.1":
   "integrity" "sha512-TNPjfTr432qx7yOjQyaXm3dSR0MH9vXp7eT1BFSl/C51g+EFnOR9hTg1IreahGBmDNCehscshe45f+C1TBZbLw=="
   "resolved" "https://registry.npmjs.org/boxen/-/boxen-1.3.0.tgz"
