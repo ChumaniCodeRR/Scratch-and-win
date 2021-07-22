@@ -35,25 +35,20 @@ const Login = () => {
     
   <div className="container-fluid">
     <div className="row paper1">
-       <div className="row">
-         <div className="col-md-12">
+        <div className="col-md-12">
             <div className="row">
               <div className="col-md-12">
                <img src={logo} className="imageLogo float-right img fluid" />
              </div>
             </div>
-         </div>
-       </div>
-       
-        <div className="col-md-6"> 
-            <div className="col-md-12">
-               <div className="row LoginImage">
-                 <img src={rewardslogo} className="LoginImage img fluid" />
-              </div>
-            </div>
-        </div>
-        <div className="col-md-12">
-           <div className="row inside-paper1">
+            <div className="row LoginImage">
+              <div className="col-md-12">
+                <div className="row">
+                 <img src={rewardslogo} className="LoginImage float-center img fluid" />
+               </div>
+             </div>
+           </div>
+            <div className="row inside-paper1">
               <div className="col-md-12">
                 <div className="row loginFont">
                   <p>Login or Register <b className="text">Below</b></p> 
@@ -65,21 +60,45 @@ const Login = () => {
                 </form>
               </div>
            </div>
-           <div className="col-md-15">
+            <div className="row">
+             <div className="col-md-12">
                 <div className="terms-login"> 
-                <br/>
+                 <br/>
                   <p className="text-center">Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
-              </div>
-            </div>
+                </div>
+             </div>
+          </div>
         </div>
     </div>
     <div className="row rewards">
       <div className="col-md-12">
-
-      </div>
+        <div className="row rewards-1">
+           <div className="col-md-12">
+                <div className="row text-rewards">
+                 GET REWARDS WITH INSTANT <br/>
+               </div>
+               <div className="row text-rewards2">
+                 SAVINGS EVERY TIME TOU PURCHASE
+               </div><br/>
+               <div className="row text-rewards3">
+                 Receive instant savings in King Pie crowns every time you purchase from your nearest King Pie store.     
+               </div>
+               <div className="row text-rewards4">
+                 Thats's not all, we have loads of great Royal Reward benefits just for you.
+               </div><br/>
+           </div>
+        </div>
+     </div>
     </div>
     <div className="row visit1">
-
+      <div className="col-md-12">
+          <div className="row text-visit">
+               <p color="white">EVERY VISIT IS A CHANCE TO BE REWARDED</p>
+          </div>
+          <div className="row text-visit2">
+               <p color="white">Why should you join</p>
+          </div>
+      </div>
     </div>
   </div>
    

@@ -60,8 +60,8 @@
 .visit1 {
   width: auto;
   background-image: url('../image/backgroundimage.jpg');
-  min-height: 35vh;  
-  /* height:100%;  */
+  /* max-height: 50vh;   */
+  height:200px;
   background-repeat: no-repeat;
   background-size:100%;
 }
