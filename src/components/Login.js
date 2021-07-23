@@ -27,8 +27,6 @@ const Login = () => {
     width:"150px",
     height: "150px",
     border: "50%",
-  
-    
   }; 
 
   return (
@@ -38,17 +36,93 @@ const Login = () => {
         <div className="col-md-12">
             <div className="row">
               <div className="col-md-12">
+                <img src={logo} className="imageLogo float-right img-fluid" />
+              </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <img src={rewardslogo} className="LoginImage img-fluid" />
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="row-fluid loginFont">
+                                <p>Login or Register <b className="text">Below</b></p> 
+                              </div> 
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="row-fluid">
+                                {/* <div className="col-md-6"> */}
+                                  <form className="form">  
+                                    <input className="form-control textboxField" type="text" label="Cell Number" name="cellnumber" placeholder="Cell Number" />
+                                    <p></p>    
+                                    <button type="submit" onClick={navigateTo} className="buttonSubmit mb-2 mx-auto">Send OTP </button>
+                                  </form>
+                                {/* </div> */}
+                              </div> 
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                   <div className="d-flex justify-content-center">
+                     <div className='row'>
+                       <div className="col-md-12">
+                         <div className="row">
+                           <div className="row-fluid terms-login"> 
+                            <p>Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+       {/* <div className="row">
+         <div className="col-md-12">
+            <div className="row">
+              <div className="col-md-12">
                <img src={logo} className="imageLogo float-right img fluid" />
              </div>
             </div>
-            <div className="row LoginImage">
-              <div className="col-md-12">
-                <div className="row">
-                 <img src={rewardslogo} className="LoginImage float-center img fluid" />
+         </div>
+       </div> */}
+       
+        {/* <div className="col-md-6"> 
+            <div className="col-md-12">
+               <div className="row LoginImage">
+                 <img src={rewardslogo} className="LoginImage img fluid" />
                </div>
-             </div>
-           </div>
-            <div className="row inside-paper1">
+            </div>
+        </div>
+        <div className="col-md-12">
+           <div className="row inside-paper1">
               <div className="col-md-12">
                 <div className="row loginFont">
                   <p>Login or Register <b className="text">Below</b></p> 
@@ -65,6 +139,7 @@ const Login = () => {
                 <div className="terms-login"> 
                  <br/>
                   <p className="text-center">Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
+<<<<<<< HEAD
                 </div>
              </div>
           </div>
@@ -89,18 +164,111 @@ const Login = () => {
            </div>
         </div>
      </div>
+=======
+              </div>
+            </div>
+        </div> */}
     </div>
+    <div className="row rewards">
+      <div className="col-md-12">
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <div className="text-rewards">
+                                GET REWARDS WITH INSTANT 
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <div className="text-rewards">
+                                SAVINGS EVERY TIME TOU PURCHASE
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+           </div>
+           <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <div className="text-rewards3">
+                                 Receive instant savings in King Pie crowns every time you purchase from your nearest King Pie store.     
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+           </div>
+           <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <div className="text-rewards4">
+                                Thats's not all, we have loads of great Royal Reward benefits just for you..     
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+           </div>
+      </div>
+    </div>
+  
     <div className="row visit1">
       <div className="col-md-12">
-          <div className="row text-visit">
-               <p color="white">EVERY VISIT IS A CHANCE TO BE REWARDED</p>
+         <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                           <div className="row-fluid">
+                              <div className="text-visit">
+                                <p color="white">EVERY VISIT IS A CHANCE TO BE REWARDED</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
           </div>
-          <div className="row text-visit2">
-               <p color="white">Why should you join</p>
+          <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <div className="text-visit2">
+                                <p color="white">Why should you join</p>
+                               </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
           </div>
       </div>
     </div>
-  </div>
+</div>
    
     
    /*
@@ -219,7 +387,66 @@ const Login = () => {
              </div>
           </div>
         </div> }
-       </div>*/
+       </div>
+       
+       
+       
+       
+        <div className="birthdayPage">
+            <div className="logo">
+              <img src={logo} className="imageLogo"/>
+            </div>
+              <div className="birthImage">
+                 <img src={standachancetowin} className="imageDiv"/>
+              </div>
+              <div className="birthfont">             
+                  Enter your <b className="text">birthday</b>             
+              </div>
+              <br/>
+              <div className="textBirthDay">
+                <div class="field-inline-block">
+                  <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block"><p className="layer">-</p></div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="M" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="M" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block"><p className="layer">-</p></div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="D" size="1" class="date-field" />
+                </div>
+                <div class="field-inline-block">
+                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="D" size="1" class="date-field" />
+                </div>
+              </div><br/>
+              <div>
+                 <button type="submit" className="buttonPlay" onClick={navigateTo}> PLAY NOW </button>
+                  <div className="buttonPlayText">
+                     <p>SCRATCH & WIN</p>
+                  </div>
+              </div>
+              <div className="rewardslogo">
+                 <img src={rewardslogo} className="rewardslogo" />
+              </div>
+              <div className="terms">
+                <p>Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
+              </div>
+            </div>           
+       
+       
+       */
 
         
     )

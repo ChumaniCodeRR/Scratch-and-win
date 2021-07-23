@@ -23,60 +23,123 @@ const BirthDayPage = () => {
     const navigateTo = () => history.push('/ScratchOff');
 
     return (    
-        <div className="main-bg">            
-            <div className="birthdayPage">
-            <div className="logo">
-              <img src={logo} className="imageLogo"/>
+      <div className="container-fluid">
+       <div className="row birthdayPage">
+          <div className="col-md-12">
+            <div className="row">
+                <div className="col-md-12">
+                  <img src={logo} className="imageLogo float-right img fluid" />
+                </div>
             </div>
-              <div className="birthImage">
-                 <img src={standachancetowin} className="imageDiv"/>
-              </div>
-              <div className="birthfont">             
-                  Enter your <b className="text">birthday</b>             
-              </div>
-              <br/>
-              <div className="textBirthDay">
-                <div class="field-inline-block">
-                  <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block"><p className="layer">-</p></div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="M" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="M" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block"><p className="layer">-</p></div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="D" size="1" class="date-field" />
-                </div>
-                <div class="field-inline-block">
-                   <input type="text" pattern="[0-9]*" maxlength="1" placeholder="D" size="1" class="date-field" />
-                </div>
-              </div><br/>
-              <div>
-                 <button type="submit" className="buttonPlay" onClick={navigateTo}> PLAY NOW </button>
-                  <div className="buttonPlayText">
-                     <p>SCRATCH & WIN</p>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <img src={standachancetowin} className="imageDiv img-fluid" />
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                   <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                              <div className="row-fluid birthfont">             
+                                 Enter your <b className="text"> birthday</b>             
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+             </div>
+            <div className="row">
+               <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row">
+                             <div className="row-fluid">
+                               <form className="form"> 
+                                <div className="col-md-12">
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                                 </div>                               
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                                 </div>                               
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                                 </div>
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="Y" size="1" class="date-field" />
+                                 </div>
+                                 <div class="field-inline-block"><p className="layer">-</p></div>                             
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="M" size="1" class="date-field" />
+                                 </div>                              
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="M" size="1" class="date-field" />
+                                 </div>                             
+                                 <div class="field-inline-block"><p className="layer">-</p></div>                                
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="D" size="1" class="date-field" />
+                                 </div>          
+                                 <div class="field-inline-block">
+                                    <input type="text" pattern="[0-9]*" maxlength="1" placeholder="D" size="1" class="date-field" />
+                                 </div>
+                              </div>
+                              <div className="row-fluid"> 
+                                 <button type="submit" className="buttonPlay mb-2 mx-auto" onClick={navigateTo}> PLAY NOW </button>
+                                 <div className="row-fluid">
+                                  <p className="buttonPlayText">SCRATCH & WIN</p> 
+                                 </div>
+                              </div>
+                             </form> 
+                            </div>
+                           </div>
+                        </div>
+                     </div> 
                   </div>
               </div>
-              <div className="rewardslogo">
-                 <img src={rewardslogo} className="rewardslogo" />
-              </div>
-              <div className="terms">
-                <p>Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
-              </div>
-            </div>           
-        </div>
+            </div>
+            <div className="row-fluid">
+               <div className="col-md-12">
+                  <div className="d-flex justify-content-left">
+                     <div className='row'>
+                        <div className="col-md-12">
+                           <div className="row-fluid rewardslogo">
+                              <img src={rewardslogo} className="rewardslogo float-left img-fluid" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div className="row">
+                <div className="col-md-12">
+                   <div className="d-flex justify-content-center">
+                     <div className='row'>
+                       <div className="col-md-12">
+                         <div className="row">
+                           <div className="row-fluid terms-login"> 
+                            <p>Privacy Policy | Terms & Conditions | Customer Care Line: 0861 546 4743</p>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+               </div>
+            </div>
+          </div> 
+        </div>  
+      </div>
     );
 }
 

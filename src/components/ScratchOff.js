@@ -125,29 +125,70 @@ class ScratchOff extends React.PureComponent {
         return (
            
           <div style={{position:'relative',width:1535,opacity:1.0,height:750}}>     
-            <canvas style={{position:'absolute',zIndex:2,width:'100%',height:'100%'}} ref={el => this.canvas = el} />
+           <canvas style={{position:'absolute',zIndex:2,width:'100%',height:'100%'}} ref={el => this.canvas = el} />
             <div className="secret absolute fill no-select flex justify-center items-center">
               {this.props.children}   
             </div>
-           <div className="scratchPage">  
-            <div>
-               <button type="submit" className="homebutton" onclick={App}>Home</button>
+
+            <div className="container-fluid">
+              <div className="row scratchPage"> 
+               <div className="col-md-12">
+                 <div className="row">
+                   <div className="col-md-12">
+                      <div className="row-fluid">
+                        <button type="submit" className="homebutton" onclick={App}>Home</button>
+                      </div>
+                   </div>
+                 </div>
+                 <div className="row">
+                   <div className="col-md-12">
+                     <div className="row-fluid">
+                        <img src={logo} className="imageLogo float-right img fluid" />
+                     </div>
+                   </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-12">
+                            <div className="row-fluid">
+                              <img src={crownswin} className="crownwins float-center img-fluid" />
+                              <div className="row crownwins">
+                                <b strong className="crownstext">{rand} CROWNS!</b>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className='d-flex justify-content-center'>
+                      <div className='row'>
+                          <div className="col-md-9 px-0">
+                            <div className="row-fluid">
+                              <img src={winlogo} className="img-fluid" />
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                   <div className="col-md-12">
+                     <div className='row'>
+                       <div className="scratchandwinlogo">
+                        <img src={rewardslogo} className="scratchandwinlogo" />
+                       </div>
+                     </div>
+                   </div>
+                </div>
+              </div>
             </div>
-            <div className="logo">
-              <img src={logo} className="imageLogo"/>
-            </div>
-            <div className="crownwins">
-              <img src={crownswin} className="imageDiv"/>
-              <b className="crownstext">{rand} CROWNS!</b>
-            </div>
-            <div className="win">
-              <img src={winlogo} className="win"/>
-            </div>
-            <div className="scratchandwinlogo">
-                <img src={rewardslogo} className="scratchandwinlogo" />
-            </div>
-           </div>
           </div>
+        </div>
         );
     }
 }
@@ -157,4 +198,23 @@ class ScratchOff extends React.PureComponent {
 //document.body.appendChild(root);
 //render(<ScratchOff>{secret}</ScratchOff>, root);
 
-export default ScratchOff
+/*
+
+<div>
+               </div>
+              <div className="logo">
+                <img src={logo} className="imageLogo"/>
+              </div>
+              <div className="crownwins">
+                <img src={crownswin} className="imageDiv"/>
+                <b className="crownstext">{rand} CROWNS!</b>
+              </div>
+              <div className="win">
+                <img src={winlogo} className="win"/>
+              </div>
+              <div className="scratchandwinlogo">
+                <img src={rewardslogo} className="scratchandwinlogo" />
+              </div>
+*/
+
+export default ScratchOff;
