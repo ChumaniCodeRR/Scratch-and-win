@@ -17,6 +17,11 @@ class ScratchOff extends React.PureComponent {
 
     constructor(props) {
         super(props);
+        
+        this.state = { 
+          loading: true,
+        }
+        
         this.isDrawing = false;
         this.lastPoint = null;
         this.touchStart = this.touchStart.bind(this);
@@ -26,6 +31,8 @@ class ScratchOff extends React.PureComponent {
 
     componentDidMount() {    
     
+        this.timerHandle = setTimeout(() => this.setState({ loading: false }), 3500); 
+
         const canvas = this.canvas;
         canvas.width = canvas.parentElement.offsetWidth;
         canvas.height = canvas.parentElement.offsetHeight;
@@ -45,9 +52,16 @@ class ScratchOff extends React.PureComponent {
         this.cover = new Image();
         this.cover.src = require('../image/Gamification-03.jpg');
         this.cover.onload = () => this.ctx.drawImage(this.cover, 0, 0, canvas.width, canvas.height);
+      
       }
 
       componentWillUnmount() {
+        //memory leak timer
+        if (this.timerHandle) {
+          clearTimeout(this.timerHandle);
+          this.timerHandle = 0;
+        }
+
         const canvas = this.canvas;
         canvas.removeEventListener('mousedown', this.touchStart);
         canvas.removeEventListener('touchstart', this.touchStart);
@@ -124,8 +138,10 @@ class ScratchOff extends React.PureComponent {
         ///responsive page, loading page 
         return (
            
-          <div style={{position:'relative',width:1535,opacity:1.0,height:750}}>     
-           <canvas style={{position:'absolute',zIndex:2,width:'100%',height:'100%'}} ref={el => this.canvas = el} />
+         
+
+          <div style={{position:'relative',opacity:1.0}}>     
+            <canvas style={{position:'absolute',zIndex:2,width:'100%',height:'100%'}} ref={el => this.canvas = el} />
             <div className="secret absolute fill no-select flex justify-center items-center">
               {this.props.children}   
             </div>
@@ -136,7 +152,7 @@ class ScratchOff extends React.PureComponent {
                  <div className="row">
                    <div className="col-md-12">
                       <div className="row-fluid">
-                        <button type="submit" className="homebutton" onclick={App}>Home</button>
+                        <button type="submit" className="homebutton" onClick={App}>Home</button>
                       </div>
                    </div>
                  </div>
